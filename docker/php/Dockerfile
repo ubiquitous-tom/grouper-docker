@@ -1,11 +1,12 @@
 FROM php:7.2.10-fpm-alpine
 
-RUN apk --no-cache add $PHPIZE_DEPS icu-dev gettext-dev \
+RUN apk --no-cache add $PHPIZE_DEPS \
+    # icu-dev gettext-dev \
     # && docker-php-ext-install intl gettext \
     && pecl install xdebug \
     && docker-php-ext-enable xdebug \
-    # && pecl install redis \
-    # && docker-php-ext-enable redis
+    && pecl install redis \
+    && docker-php-ext-enable redis
 
 RUN { \
 		echo 'xdebug.remote_enable=1'; \

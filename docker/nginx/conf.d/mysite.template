@@ -1,7 +1,11 @@
 server {
-    listen 80;
+    listen ${NGINX_PORT};
     index index.php index.html;
     root /var/www/html;
+
+    server_name ${NGINX_HOST};
+
+    charset utf-8;
 
     location / {
         try_files $uri /index.php?$args;
@@ -15,4 +19,11 @@ server {
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         fastcgi_param PATH_INFO $fastcgi_path_info;
     }
+
+    access_log off;
+    error_log  /var/log/nginx/error.log error;
+
+    sendfile off;
+
+    client_max_body_size 100m;
 }
