@@ -25,11 +25,17 @@ services:
     build: ./docker/nginx
     ports:
       - "80:80"
-    restart: always
+      - "443:443"
+    # restart: always
     volumes:
       - "${PROJECT_ROOT}:/var/www/html"
       # - ./docker/nginx/conf.d:/etc/nginx/conf.d
       - ./docker/nginx/conf.d/grouper.dev.conf:/etc/nginx/conf.d/grouper.dev.conf
+
+      # https://letsencrypt.org/docs/certificates-for-localhost/
+      # https://www.humankode.com/ssl/create-a-selfsigned-certificate-for-nginx-in-5-minutes
+      - ./docker/nginx/certs:/etc/ssl/certs
+      - ./docker/nginx/letsencrypt/live/grouper.dev:/etc/letsencrypt/live/grouper.dev
     networks:
       - server
     depends_on:
@@ -48,7 +54,7 @@ services:
     volumes:
       - "${PROJECT_ROOT}:/var/www/html"
     # working_dir: /var/www/html/public
-    restart: always
+    # restart: always
     networks:
       - database
       - server
