@@ -19,4 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/members', 'MemberController@index');
+//Route::get('/members', 'MemberController@index');
+
+Route::resource('members', 'MemberController');

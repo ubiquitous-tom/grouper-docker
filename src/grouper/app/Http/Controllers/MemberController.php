@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Member;
+use App\Transformers\MemberTransformer;
 use Illuminate\Http\Request;
+use Spatie\Fractal\Fractal;
 
 class MemberController extends Controller
 {
@@ -13,7 +16,14 @@ class MemberController extends Controller
      */
     public function index()
     {
-        return view('members.index');
+//        $all = Member::all();
+//        $members = \fractal()
+//            ->collection($all)
+//            ->transformWith(new MemberTransformer())
+//            ->toArray();
+        $members = Member::all();
+//        dd($members);
+        return view('members.index', ['members' => $members]);
     }
 
     /**
@@ -23,7 +33,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        //
+        return view('members.edit');
     }
 
     /**
@@ -45,7 +55,9 @@ class MemberController extends Controller
      */
     public function show($id)
     {
-        //
+        $member = Member::findOrFail($id);
+
+        return view('members.show');
     }
 
     /**
