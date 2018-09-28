@@ -8,10 +8,10 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      # - ./docker/database/data:/var/lib/mysql
-      - data:/var/lib/mysql
+      - ./docker/database/data:/var/lib/mysql
+      # - data:/var/lib/mysql
       - ./docker/database/custom.cnf:/etc/mysql/conf.d/custom.cnf
-      - ./docker/database/mysql-slow.log:/var/log/mysql/mysql-slow.log
+      - ./docker/database/mysql/:/var/log/mysql/
     networks:
       - database
     environment:

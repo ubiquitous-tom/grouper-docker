@@ -8,18 +8,18 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/members">
                     <span data-feather="file"></span>
-                    Orders
+                    Members
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/groups">
                     <span data-feather="shopping-cart"></span>
-                    Products
+                    Groups
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="users"></span>
                     Customers
@@ -36,7 +36,7 @@
                     <span data-feather="layers"></span>
                     Integrations
                 </a>
-            </li>
+            </li> -->
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">

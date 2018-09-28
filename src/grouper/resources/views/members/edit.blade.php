@@ -10,7 +10,7 @@
             <div class="row">
 
                 <div class="col-md-12">
-                    <h4 class="mb-3">Edit: {{ $member->first_name }} {{ $member->last_name }} (ID: {{ $member->id }})</h4>
+                    <h4 class="mb-3">Edit Member: {{ $member->first_name }} {{ $member->last_name }} (ID: {{ $member->id }})</h4>
                     <form class="needs-validation" method="POST" action="/members/{{ $member->ID }}" novalidate>
                         @method('PUT')
                         @csrf
