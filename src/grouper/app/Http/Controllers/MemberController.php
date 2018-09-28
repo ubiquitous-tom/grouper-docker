@@ -33,7 +33,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        return view('members.edit');
+        return view('members.create');
     }
 
     /**
@@ -57,7 +57,7 @@ class MemberController extends Controller
     {
         $member = Member::findOrFail($id);
 
-        return view('members.show');
+        return view('members.show', ['member' => $member]);
     }
 
     /**
@@ -68,7 +68,10 @@ class MemberController extends Controller
      */
     public function edit($id)
     {
-        //
+        $member = Member::findOrFail($id);
+//        dd($member->full_name);
+//        dd($member);
+        return view('members.edit', ['member' => $member]);
     }
 
     /**
