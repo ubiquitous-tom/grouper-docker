@@ -7,13 +7,13 @@
 
                 <div class="col-md-12">
                     <h4 class="mb-3">Create New Event</h4>
-                    <form class="needs-validation" method="POST" action="/groups" novalidate>
+                    <form class="needs-validation" method="POST" action="/events" novalidate>
                         @csrf
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <label for="eventName">Event Name <span class="text-muted">(Reqired)</span></label>
-                                <input type="text" class="form-control" id="eventName" name="name" placeholder="Group Name" required>
+                                <input type="text" class="form-control" id="eventName" name="name" placeholder="Event Name" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>

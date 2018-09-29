@@ -13,7 +13,11 @@ class UpdateGroupRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        if (\Auth::user()) {
+            return true;
+        }
+
+        return false;
     }
 
     /**

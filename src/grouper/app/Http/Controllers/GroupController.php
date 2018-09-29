@@ -6,6 +6,7 @@ use App\Group;
 use App\Http\Requests\StoreGroupRequest;
 use App\Http\Requests\UpdateGroupRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Symfony\Component\HttpKernel\HttpCache\Store;
 
 class GroupController extends Controller
@@ -40,10 +41,19 @@ class GroupController extends Controller
      */
     public function store(StoreGroupRequest $request)
     {
-//        dd($request->input());
-        dd($request->all());
         $validated = $request->validated();
-        dd($validated);
+        if ($validated) {
+            $group = new Group();
+            $group->name = $request->input('name');
+            $group->location = $request->input('location');
+            $group->start_time = $request->input('start_time');
+            $group->end_time = $request->input('end_time');
+            $group->save();
+
+            Session(['redirect.groups.updated.' . $group->id => $request->fullUrl()]);
+
+            return Redirect::to('/groups')->with('message', 'Update Successful!');
+        }
     }
 
     /**
@@ -81,8 +91,20 @@ class GroupController extends Controller
      */
     public function update(UpdateGroupRequest $request, $id)
     {
-//        dd($request->all(), $id);
         $validated = $request->validated();
+        if ($validated) {
+            $group = Group::find($id);
+            $group->name = $request->input('name');
+            $group->location = $request->input('location');
+            $group->start_time = $request->input('start_time');
+            $group->end_time = $request->input('end_time');
+            $group->status = $request->input('status');
+            $group->save();
+
+            Session(['redirect.groups.updated.' . $id => $request->fullUrl()]);
+
+            return Redirect::back()->with('message', 'Update Successful!');
+        }
     }
 
     /**

@@ -7,28 +7,27 @@
 
                 <div class="col-md-12">
                     <h4 class="mb-3">Add New Member</h4>
-                    <form class="needs-validation" method="POST" action="/members" novalidate>
-                        @method('PUT')
+                    <form class="needs-validation" method="POST" action="/members">
                         @csrf
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">First name <span class="text-muted">(Reqired)</span></label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" required>
+                                <input type="text" class="form-control" id="firstName" name="first_name" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="middleName">Middle name</label>
-                                <input type="text" class="form-control" id="middleName" placeholder="">
+                                <input type="text" class="form-control" id="middleName" name="middle_name" placeholder="">
                                 <div class="invalid-feedback">
                                     Valid middle name is optional.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="lastName">Last name <span class="text-muted">(Reqired)</span></label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" required>
+                                <input type="text" class="form-control" id="lastName" name="last_name" placeholder="" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
                                 </div>
@@ -37,7 +36,7 @@
 
                         <div class="mb-3">
                             <label for="email">Email <span class="text-muted">(Reqired)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -45,7 +44,7 @@
 
                         <div class="mb-3">
                             <label for="phoneNumber">Tel # <span class="text-muted">(Reqired)</span></label>
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="805-555-5555" required>
+                            <input type="text" class="form-control" id="phoneNumber" name="phone_number" placeholder="805-555-5555" required>
                             <div class="invalid-feedback">
                                 Please enter a valid phone number.
                             </div>
@@ -53,7 +52,7 @@
 
                         <div class="mb-3">
                             <label for="company">Company Name <span class="text-muted">(Reqired)</span></label>
-                            <input type="text" class="form-control" id="company" placeholder="Apple" required>
+                            <input type="text" class="form-control" id="company" name="company" placeholder="Apple" required>
                             <div class="invalid-feedback">
                                 Please enter a valid company name.
                             </div>

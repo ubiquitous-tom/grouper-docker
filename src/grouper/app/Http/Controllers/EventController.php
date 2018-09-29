@@ -40,11 +40,18 @@ class EventController extends Controller
      */
     public function store(StoreEventRequest $request)
     {
-        dd($request->all());
         $validated = $request->validated();
-        dd($validated);
+        if ($validated) {
+            $event = new Event();
+            $event->name = $request->input('name');
+            $event->start_date = $request->input('start_date');
+            $event->end_date = $request->input('end_date');
+            $event->save();
 
-        return view('events.index');
+            Session(['redirect.events.created.' . $event->id => $request->fullUrl()]);
+
+            return Redirect::to('/events')->with('message', 'Update Successful!');
+        }
     }
 
     /**

@@ -2,16 +2,16 @@
 
 @section('content')
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <!--<div class="container">
-            <h1 class="h2">Edit {{ $group->first_name }} {{ $group->last_name }} (ID: {{ $group->id }}) {{ $group->full_name }}</h1>
-        </div>-->
-    <!--<meta name="csrf-token" content="{{ csrf_token() }}">-->
         <div class="container">
             <div class="row">
-
+                @if (Session::get('message'))
+                    <div class="alert alert-success" role="alert">
+                        {{ Session::get('message') }}
+                    </div>
+                @endif
                 <div class="col-md-12">
                     <h4 class="mb-3">Edit Group: {{ $group->name }} (ID: {{ $group->id }})</h4>
-                    <form class="needs-validation" method="POST" action="/groups/{{ $group->id }}" novalidate>
+                    <form class="needs-validation" method="POST" action="/groups/{{ $group->id }}">
                         @method('PUT')
                         @csrf
 

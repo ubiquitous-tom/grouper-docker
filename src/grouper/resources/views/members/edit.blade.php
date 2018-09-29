@@ -8,31 +8,35 @@
             <!--<meta name="csrf-token" content="{{ csrf_token() }}">-->
         <div class="container">
             <div class="row">
-
+                @if (Session::get('message'))
+                    <div class="alert alert-success" role="alert">
+                        {{ Session::get('message') }}
+                    </div>
+                @endif
                 <div class="col-md-12">
                     <h4 class="mb-3">Edit Member: {{ $member->first_name }} {{ $member->last_name }} (ID: {{ $member->id }})</h4>
-                    <form class="needs-validation" method="POST" action="/members/{{ $member->ID }}" novalidate>
+                    <form class="needs-validation" method="POST" action="/members/{{ $member->id }}" novalidate>
                         @method('PUT')
                         @csrf
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="firstName">First name <span class="text-muted">(Reqired)</span></label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="{{ $member->first_name }}" required>
+                                <input type="text" class="form-control" id="firstName" name="first_name" placeholder="" value="{{ $member->first_name }}" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
                             <div class="col-md-3 mb-3">
                                 <label for="middleName">Middle name</label>
-                                <input type="text" class="form-control" id="middleName" placeholder="" value="{{ $member->middle_name }}">
+                                <input type="text" class="form-control" id="middleName" name="middle_name" placeholder="" value="{{ $member->middle_name }}">
                                 <div class="invalid-feedback">
                                     Valid middle name is optional.
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="lastName">Last name <span class="text-muted">(Reqired)</span></label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="{{ $member->last_name }}" required>
+                                <input type="text" class="form-control" id="lastName" name="last_name" placeholder="" value="{{ $member->last_name }}" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
                                 </div>
@@ -54,7 +58,7 @@
 
                         <div class="mb-3">
                             <label for="email">Email <span class="text-muted">(Reqired)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="you@example.com" value="{{ $member->email }}" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" value="{{ $member->email }}" required>
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
                             </div>
@@ -62,7 +66,7 @@
 
                         <div class="mb-3">
                             <label for="phoneNumber">Tel # <span class="text-muted">(Reqired)</span></label>
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="805-555-5555" value="{{ $member->phone_number }}" required>
+                            <input type="text" class="form-control" id="phoneNumber" name="phone_number" placeholder="805-555-5555" value="{{ $member->phone_number }}" required>
                             <div class="invalid-feedback">
                                 Please enter a valid phone number.
                             </div>
@@ -70,7 +74,7 @@
 
                         <div class="mb-3">
                             <label for="company">Company Name <span class="text-muted">(Reqired)</span></label>
-                            <input type="text" class="form-control" id="company" placeholder="Apple" value="{{ $member->company }}" required>
+                            <input type="text" class="form-control" id="company" name="company" placeholder="Apple" value="{{ $member->company }}" required>
                             <div class="invalid-feedback">
                                 Please enter a valid company name.
                             </div>
@@ -183,11 +187,11 @@
                             <div class="col-md-4 mb-3">
                                 Member Status
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="status-active" value="1" {{ $member->status === 1 ? 'checked' : '' }}>
+                                    <input type="radio" class="custom-control-input" id="status-active" name="status" value="1" {{ $member->status === 1 ? 'checked' : '' }}>
                                     <label class="custom-control-label" for="status-active">Active</label>
                                 </div>
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" class="custom-control-input" id="status-inactive" value="0" {{ $member->status === 0 ? 'checked' : '' }}>
+                                    <input type="radio" class="custom-control-input" id="status-inactive" name="status" value="0" {{ $member->status === 0 ? 'checked' : '' }}>
                                     <label class="custom-control-label" for="status-inactive">Inactive</label>
                                 </div>
                             </div>

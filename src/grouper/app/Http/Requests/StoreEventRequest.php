@@ -13,7 +13,11 @@ class StoreEventRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        if (\Auth::user()) {
+            return true;
+        }
+
+        return false;
     }
 
     /**
@@ -27,7 +31,6 @@ class StoreEventRequest extends FormRequest
             'name' => 'required|max:255',
             'start_date' => 'required',
             'end_date' => 'required',
-            'status' => 'required',
         ];
     }
 }

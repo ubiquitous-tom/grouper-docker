@@ -4,10 +4,14 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <div class="container">
             <div class="row">
-
+                @if (Session::get('message'))
+                    <div class="alert alert-success" role="alert">
+                        {{ Session::get('message') }}
+                    </div>
+                @endif
                 <div class="col-md-12">
                     <h4 class="mb-3">Create New Group</h4>
-                    <form class="needs-validation" method="POST" action="/groups" novalidate>
+                    <form class="needs-validation" method="POST" action="/groups">
                         @csrf
 
                         <div class="row">
