@@ -2,15 +2,15 @@
     <div class="sidebar-sticky">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <a class="nav-link active" href="/dashboard">
                     <span data-feather="home"></span>
                     Dashboard <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/members">
+                <a class="nav-link" href="/events">
                     <span data-feather="file"></span>
-                    Members
+                    Events
                 </a>
             </li>
             <li class="nav-item">
@@ -19,13 +19,13 @@
                     Groups
                 </a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">
+            <li class="nav-item">
+                <a class="nav-link" href="/members">
                     <span data-feather="users"></span>
-                    Customers
+                    Members
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="bar-chart-2"></span>
                     Reports
@@ -40,7 +40,7 @@
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
+            <span>Saved events</span>
             <a class="d-flex align-items-center text-muted" href="#">
                 <span data-feather="plus-circle"></span>
             </a>
@@ -55,7 +55,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="file-text"></span>
-                    Last quarter
+                    Last month
                 </a>
             </li>
             <li class="nav-item">
@@ -67,7 +67,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span data-feather="file-text"></span>
-                    Year-end sale
+                    Year-end special
                 </a>
             </li>
         </ul>

@@ -44,7 +44,7 @@
                     <td>{{ $group->start_time }}</td>
                     <td>{{ $group->end_time }}</td>
                     <td>{{ $group->status === 1 ? 'Active' : 'Inactive' }}</td>
-                    <td><a href="/groups/{{ $group->id }}/edit" class="btn">Edit <span data-feather="edit-2"></span></a></td>
+                    <td><a href="/groups/{{ $group->id }}/edit">Edit <span data-feather="edit-2"></span></a></td>
                 </tr>
             @endforeach
             </tbody>

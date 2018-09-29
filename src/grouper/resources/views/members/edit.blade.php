@@ -178,6 +178,21 @@
                                 </div>
                             </div>
                         </div>-->
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                Member Status
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="status-active" value="1" {{ $member->status === 1 ? 'checked' : '' }}>
+                                    <label class="custom-control-label" for="status-active">Active</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="status-inactive" value="0" {{ $member->status === 0 ? 'checked' : '' }}>
+                                    <label class="custom-control-label" for="status-inactive">Inactive</label>
+                                </div>
+                            </div>
+                        </div>
+
                         <hr class="mb-4">
                         <button class="btn btn-primary btn-lg btn-block" type="submit">Save Changes</button>
                     </form>

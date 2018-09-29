@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Group;
+use App\Http\Requests\StoreGroupRequest;
+use App\Http\Requests\UpdateGroupRequest;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpKernel\HttpCache\Store;
 
 class GroupController extends Controller
 {
@@ -26,7 +29,7 @@ class GroupController extends Controller
      */
     public function create()
     {
-        //
+        return view('groups.create');
     }
 
     /**
@@ -35,9 +38,12 @@ class GroupController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreGroupRequest $request)
     {
-        //
+//        dd($request->input());
+        dd($request->all());
+        $validated = $request->validated();
+        dd($validated);
     }
 
     /**
@@ -73,9 +79,10 @@ class GroupController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateGroupRequest $request, $id)
     {
-        //
+//        dd($request->all(), $id);
+        $validated = $request->validated();
     }
 
     /**

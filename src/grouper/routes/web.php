@@ -18,8 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index');
 
 //Route::get('/members', 'MemberController@index');
 
 Route::resource('members', 'MemberController');
 Route::resource('groups', 'GroupController');
+Route::resource('events', 'EventController');

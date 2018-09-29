@@ -48,7 +48,7 @@
             <td>{{ $member->phone_number }}</td>
             <td>{{ $member->company }}</td>
             <td>{{ $member->status === 1 ? 'Active' : 'Inactive' }}</td>
-            <td><a href="/members/{{ $member->id }}/edit" class="btn">Edit <span data-feather="edit-2"></span></a></td>
+            <td><a href="/members/{{ $member->id }}/edit">Edit <span data-feather="edit-2"></span></a></td>
         </tr>
         @endforeach
       </tbody>
