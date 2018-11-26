@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreMemberRequest;
+use App\Http\Requests\UpdateMemberRequest;
 use App\Member;
 use App\Transformers\MemberTransformer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Spatie\Fractal\Fractal;
 
 class MemberController extends Controller
@@ -42,9 +45,23 @@ class MemberController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreMemberRequest $request)
     {
-        //
+        $validated = $request->validated();
+        if ($validated) {
+            $member = new Member();
+            $member->first_name = $request->input('first_name');
+            $member->middle_name = $request->input('middle_name', '');
+            $member->last_name = $request->input('last_name');
+            $member->email = $request->input('email');
+            $member->phone_number = $request->input('phone_number');
+            $member->company = $request->input('company');
+            $member->save();
+
+            Session(['redirect.members.created.' . $member->id => $request->fullUrl()]);
+
+            return Redirect::to('/members')->with('message', 'Add New Member Successful!');
+        }
     }
 
     /**
@@ -77,13 +94,28 @@ class MemberController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateMemberRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateMemberRequest $request, $id)
     {
-        //
+        $validated = $request->validated();
+        if ($validated) {
+            $member = Member::find($id);
+            $member->first_name = $request->input('first_name');
+            $member->middle_name = $request->input('middle_name');
+            $member->last_name = $request->input('last_name');
+            $member->email = $request->input('email');
+            $member->phone_number = $request->input('phone_number');
+            $member->company = $request->input('company');
+            $member->status = $request->input('status');
+            $member->save();
+
+            Session(['redirect.members.updated.' . $id => $request->fullUrl()]);
+
+            return Redirect::back()->with('message', 'Update Successful!');
+        }
     }
 
     /**

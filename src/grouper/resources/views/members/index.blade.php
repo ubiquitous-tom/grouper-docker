@@ -2,6 +2,13 @@
 
 @section('content')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+    @if (Session::get('message'))
+        <div class="alert alert-success" role="alert">
+            {{ Session::get('message') }}
+        </div>
+    @endif
+
     <h1 class="h2">Dashboard</h1>
     <div class="btn-toolbar mb-2 mb-md-0">
       <div class="btn-group mr-2">
@@ -48,7 +55,7 @@
             <td>{{ $member->phone_number }}</td>
             <td>{{ $member->company }}</td>
             <td>{{ $member->status === 1 ? 'Active' : 'Inactive' }}</td>
-            <td><a href="/members/{{ $member->id }}/edit" class="btn">Edit <span data-feather="edit-2"></span></a></td>
+            <td><a href="/members/{{ $member->id }}/edit">Edit <span data-feather="edit-2"></span></a></td>
         </tr>
         @endforeach
       </tbody>

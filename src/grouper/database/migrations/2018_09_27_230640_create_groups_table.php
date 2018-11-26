@@ -16,8 +16,10 @@ class CreateGroupsTable extends Migration
         Schema::create('groups', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('location');
             $table->dateTime('start_time');
             $table->dateTime('end_time');
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }
