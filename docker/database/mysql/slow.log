@@ -2886,3 +2886,6 @@ select * from `events`;
 # Rows_affected: 0  Bytes_sent: 1682
 SET timestamp=1538192233;
 select * from `events`;
+mysqld, Version: 10.3.9-MariaDB-1:10.3.9+maria~bionic-log (mariadb.org binary distribution). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time		    Id Command	Argument

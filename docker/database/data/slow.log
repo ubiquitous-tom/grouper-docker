@@ -1,0 +1,539 @@
+mysqld, Version: 10.3.9-MariaDB-1:10.3.9+maria~bionic-log (mariadb.org binary distribution). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time		    Id Command	Argument
+# Time: 181126 17:43:53
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.011222  Lock_time: 0.010385  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 670
+use grouper;
+SET timestamp=1543254233;
+SELECT * FROM information_schema.routines WHERE routine_schema = 'grouper' ORDER BY routine_name;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 11  Schema:   QC_hit: No
+# Query_time: 0.000593  Lock_time: 0.000464  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 242
+SET timestamp=1543254233;
+SELECT SPECIFIC_NAME, ROUTINE_TYPE, DTD_IDENTIFIER, IS_DETERMINISTIC, SQL_DATA_ACCESS, SECURITY_TYPE, DEFINER FROM `information_schema`.`ROUTINES` WHERE `ROUTINE_SCHEMA` = 'grouper';
+# Time: 181126 17:44:17
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000293  Lock_time: 0.000121  Rows_sent: 16  Rows_examined: 16
+# Rows_affected: 0  Bytes_sent: 1193
+SET timestamp=1543254257;
+SELECT * FROM `groups` LIMIT 0,1000;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000705  Lock_time: 0.000085  Rows_sent: 8  Rows_examined: 8
+# Rows_affected: 0  Bytes_sent: 223
+SET timestamp=1543254257;
+SELECT Engine, Support FROM `information_schema`.`engines` WHERE SUPPORT IN ('DEFAULT', 'YES');
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000677  Lock_time: 0.000305  Rows_sent: 40  Rows_examined: 80
+# Rows_affected: 0  Bytes_sent: 1085
+SET timestamp=1543254257;
+SELECT * FROM `information_schema`.`character_sets` ORDER BY `character_set_name` ASC;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000706  Lock_time: 0.000090  Rows_sent: 33  Rows_examined: 355
+# Rows_affected: 0  Bytes_sent: 692
+SET timestamp=1543254257;
+SELECT * FROM `information_schema`.`collations` WHERE character_set_name = 'utf8mb4' ORDER BY `collation_name` ASC;
+# Time: 181126 17:44:18
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000275  Lock_time: 0.000073  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 90
+SET timestamp=1543254258;
+SELECT * FROM `group_member` LIMIT 0,1000;
+# Time: 181126 17:44:20
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000412  Lock_time: 0.000085  Rows_sent: 47  Rows_examined: 47
+# Rows_affected: 0  Bytes_sent: 2938
+SET timestamp=1543254260;
+SELECT * FROM `members` LIMIT 0,1000;
+# Time: 181126 17:48:42
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 12  Schema: grouper  QC_hit: No
+# Query_time: 0.001565  Lock_time: 0.000107  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 1831
+SET timestamp=1543254522;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 12  Schema: grouper  QC_hit: No
+# Query_time: 0.000285  Lock_time: 0.000025  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 94
+SET timestamp=1543254522;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 12  Schema: grouper  QC_hit: No
+# Query_time: 0.000316  Lock_time: 0.000029  Rows_sent: 1  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1543254522;
+select max(`batch`) as aggregate from `migrations`;
+# Time: 181126 17:48:46
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000300  Lock_time: 0.000077  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 246
+SET timestamp=1543254526;
+SELECT * FROM `members` LIMIT 0,1000;
+# Time: 181126 17:49:08
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000267  Lock_time: 0.000064  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 200
+SET timestamp=1543254548;
+SELECT * FROM `groups` LIMIT 0,1000;
+# Time: 181126 17:49:09
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000154  Lock_time: 0.000050  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 90
+SET timestamp=1543254549;
+SELECT * FROM `group_member` LIMIT 0,1000;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000245  Lock_time: 0.000110  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 188
+SET timestamp=1543254549;
+SELECT * FROM `articles` LIMIT 0,1000;
+# Time: 181126 17:49:10
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000307  Lock_time: 0.000171  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 190
+SET timestamp=1543254550;
+SELECT * FROM `events` LIMIT 0,1000;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000242  Lock_time: 0.000100  Rows_sent: 13  Rows_examined: 13
+# Rows_affected: 0  Bytes_sent: 399
+SET timestamp=1543254550;
+SELECT * FROM `migrations` LIMIT 0,1000;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000211  Lock_time: 0.000072  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 271
+SET timestamp=1543254550;
+SELECT * FROM `oauth_clients` LIMIT 0,1000;
+# Time: 181126 17:49:11
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000058  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 166
+SET timestamp=1543254551;
+SELECT * FROM `oauth_refresh_tokens` LIMIT 0,1000;
+# Time: 181126 17:49:12
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000134  Lock_time: 0.000048  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 195
+SET timestamp=1543254552;
+SELECT * FROM `oauth_auth_codes` LIMIT 0,1000;
+# Time: 181126 17:49:28
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000205  Lock_time: 0.000054  Rows_sent: 1  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 2000
+SET timestamp=1543254568;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000327  Lock_time: 0.000030  Rows_sent: 13  Rows_examined: 26
+# Rows_affected: 0  Bytes_sent: 767
+SET timestamp=1543254568;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000681  Lock_time: 0.000030  Rows_sent: 0  Rows_examined: 13
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2018_09_28_225051_create_event_group_pivot_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000503  Lock_time: 0.000023  Rows_sent: 0  Rows_examined: 12
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2018_09_28_222737_create_events_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000465  Lock_time: 0.000028  Rows_sent: 0  Rows_examined: 11
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2018_09_27_231619_create_group_member_pivot_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000508  Lock_time: 0.000024  Rows_sent: 0  Rows_examined: 10
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2018_09_27_230640_create_groups_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000604  Lock_time: 0.000025  Rows_sent: 0  Rows_examined: 9
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2018_09_27_184620_create_members_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000621  Lock_time: 0.000028  Rows_sent: 0  Rows_examined: 8
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2018_09_19_214534_create_articles_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000597  Lock_time: 0.000027  Rows_sent: 0  Rows_examined: 7
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2016_06_01_000005_create_oauth_personal_access_clients_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000990  Lock_time: 0.000121  Rows_sent: 0  Rows_examined: 6
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2016_06_01_000004_create_oauth_clients_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000448  Lock_time: 0.000024  Rows_sent: 0  Rows_examined: 5
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2016_06_01_000003_create_oauth_refresh_tokens_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000655  Lock_time: 0.000034  Rows_sent: 0  Rows_examined: 4
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2016_06_01_000002_create_oauth_access_tokens_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000658  Lock_time: 0.000034  Rows_sent: 0  Rows_examined: 3
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2016_06_01_000001_create_oauth_auth_codes_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.001052  Lock_time: 0.000043  Rows_sent: 0  Rows_examined: 2
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2014_10_12_100000_create_password_resets_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000547  Lock_time: 0.000029  Rows_sent: 0  Rows_examined: 1
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254568;
+delete from `migrations` where `migration` = '2014_10_12_000000_create_users_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000173  Lock_time: 0.000040  Rows_sent: 1  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 2000
+SET timestamp=1543254568;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000198  Lock_time: 0.000036  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 94
+SET timestamp=1543254568;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 13  Schema: grouper  QC_hit: No
+# Query_time: 0.000115  Lock_time: 0.000024  Rows_sent: 1  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1543254568;
+select max(`batch`) as aggregate from `migrations`;
+# Time: 181126 17:49:31
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000162  Lock_time: 0.000063  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 195
+SET timestamp=1543254571;
+SELECT * FROM `oauth_auth_codes` LIMIT 0,1000;
+# Time: 181126 17:49:33
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000199  Lock_time: 0.000068  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 246
+SET timestamp=1543254573;
+SELECT * FROM `members` LIMIT 0,1000;
+# Time: 181126 17:49:36
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000155  Lock_time: 0.000047  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 188
+SET timestamp=1543254576;
+SELECT * FROM `articles` LIMIT 0,1000;
+# Time: 181126 17:49:38
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000251  Lock_time: 0.000116  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 90
+SET timestamp=1543254578;
+SELECT * FROM `event_group` LIMIT 0,1000;
+# Time: 181126 17:50:06
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000260  Lock_time: 0.000081  Rows_sent: 1  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 2000
+SET timestamp=1543254606;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000170  Lock_time: 0.000026  Rows_sent: 13  Rows_examined: 26
+# Rows_affected: 0  Bytes_sent: 767
+SET timestamp=1543254606;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000993  Lock_time: 0.000034  Rows_sent: 0  Rows_examined: 13
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2018_09_28_225051_create_event_group_pivot_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000856  Lock_time: 0.000023  Rows_sent: 0  Rows_examined: 12
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2018_09_28_222737_create_events_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000717  Lock_time: 0.000031  Rows_sent: 0  Rows_examined: 11
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2018_09_27_231619_create_group_member_pivot_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000731  Lock_time: 0.000030  Rows_sent: 0  Rows_examined: 10
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2018_09_27_230640_create_groups_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.001065  Lock_time: 0.000035  Rows_sent: 0  Rows_examined: 9
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2018_09_27_184620_create_members_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000627  Lock_time: 0.000029  Rows_sent: 0  Rows_examined: 8
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2018_09_19_214534_create_articles_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000564  Lock_time: 0.000032  Rows_sent: 0  Rows_examined: 7
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2016_06_01_000005_create_oauth_personal_access_clients_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000689  Lock_time: 0.000027  Rows_sent: 0  Rows_examined: 6
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254606;
+delete from `migrations` where `migration` = '2016_06_01_000004_create_oauth_clients_table';
+# Time: 181126 17:50:07
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000475  Lock_time: 0.000026  Rows_sent: 0  Rows_examined: 5
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254607;
+delete from `migrations` where `migration` = '2016_06_01_000003_create_oauth_refresh_tokens_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000975  Lock_time: 0.000030  Rows_sent: 0  Rows_examined: 4
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254607;
+delete from `migrations` where `migration` = '2016_06_01_000002_create_oauth_access_tokens_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000706  Lock_time: 0.000030  Rows_sent: 0  Rows_examined: 3
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254607;
+delete from `migrations` where `migration` = '2016_06_01_000001_create_oauth_auth_codes_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000738  Lock_time: 0.000041  Rows_sent: 0  Rows_examined: 2
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254607;
+delete from `migrations` where `migration` = '2014_10_12_100000_create_password_resets_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000793  Lock_time: 0.000042  Rows_sent: 0  Rows_examined: 1
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254607;
+delete from `migrations` where `migration` = '2014_10_12_000000_create_users_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000725  Lock_time: 0.000239  Rows_sent: 1  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 2000
+SET timestamp=1543254607;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000324  Lock_time: 0.000067  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 94
+SET timestamp=1543254607;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 14  Schema: grouper  QC_hit: No
+# Query_time: 0.000137  Lock_time: 0.000028  Rows_sent: 1  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1543254607;
+select max(`batch`) as aggregate from `migrations`;
+# Time: 181126 17:50:10
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000229  Lock_time: 0.000067  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 90
+SET timestamp=1543254610;
+SELECT * FROM `event_group` LIMIT 0,1000;
+# Time: 181126 17:50:11
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000217  Lock_time: 0.000076  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 188
+SET timestamp=1543254611;
+SELECT * FROM `articles` LIMIT 0,1000;
+# Time: 181126 17:50:12
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000185  Lock_time: 0.000055  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 190
+SET timestamp=1543254612;
+SELECT * FROM `events` LIMIT 0,1000;
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000051  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 90
+SET timestamp=1543254612;
+SELECT * FROM `group_member` LIMIT 0,1000;
+# Time: 181126 17:54:18
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000353  Lock_time: 0.000104  Rows_sent: 47  Rows_examined: 47
+# Rows_affected: 0  Bytes_sent: 2898
+SET timestamp=1543254858;
+SELECT * FROM `members` LIMIT 0,1000;
+# Time: 181126 17:54:49
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000234  Lock_time: 0.000065  Rows_sent: 1  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 2000
+SET timestamp=1543254889;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000202  Lock_time: 0.000023  Rows_sent: 13  Rows_examined: 26
+# Rows_affected: 0  Bytes_sent: 767
+SET timestamp=1543254889;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000466  Lock_time: 0.000027  Rows_sent: 0  Rows_examined: 13
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2018_09_28_225051_create_event_group_pivot_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000417  Lock_time: 0.000026  Rows_sent: 0  Rows_examined: 12
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2018_09_28_222737_create_events_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000491  Lock_time: 0.000024  Rows_sent: 0  Rows_examined: 11
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2018_09_27_231619_create_group_member_pivot_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000401  Lock_time: 0.000023  Rows_sent: 0  Rows_examined: 10
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2018_09_27_230640_create_groups_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000665  Lock_time: 0.000046  Rows_sent: 0  Rows_examined: 9
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2018_09_27_184620_create_members_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000474  Lock_time: 0.000034  Rows_sent: 0  Rows_examined: 8
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2018_09_19_214534_create_articles_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000501  Lock_time: 0.000023  Rows_sent: 0  Rows_examined: 7
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2016_06_01_000005_create_oauth_personal_access_clients_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000604  Lock_time: 0.000098  Rows_sent: 0  Rows_examined: 6
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2016_06_01_000004_create_oauth_clients_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000488  Lock_time: 0.000026  Rows_sent: 0  Rows_examined: 5
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2016_06_01_000003_create_oauth_refresh_tokens_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000510  Lock_time: 0.000027  Rows_sent: 0  Rows_examined: 4
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2016_06_01_000002_create_oauth_access_tokens_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000460  Lock_time: 0.000028  Rows_sent: 0  Rows_examined: 3
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2016_06_01_000001_create_oauth_auth_codes_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000769  Lock_time: 0.000026  Rows_sent: 0  Rows_examined: 2
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2014_10_12_100000_create_password_resets_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000587  Lock_time: 0.000031  Rows_sent: 0  Rows_examined: 1
+# Rows_affected: 1  Bytes_sent: 11
+SET timestamp=1543254889;
+delete from `migrations` where `migration` = '2014_10_12_000000_create_users_table';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000171  Lock_time: 0.000045  Rows_sent: 1  Rows_examined: 1
+# Rows_affected: 0  Bytes_sent: 2000
+SET timestamp=1543254889;
+select * from information_schema.tables where table_schema = 'grouper' and table_name = 'migrations';
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000146  Lock_time: 0.000031  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 94
+SET timestamp=1543254889;
+select `migration` from `migrations` order by `batch` asc, `migration` asc;
+# User@Host: docker[docker] @  [192.168.0.3]
+# Thread_id: 16  Schema: grouper  QC_hit: No
+# Query_time: 0.000090  Lock_time: 0.000022  Rows_sent: 1  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 64
+SET timestamp=1543254889;
+select max(`batch`) as aggregate from `migrations`;
+# Time: 181126 17:54:53
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000278  Lock_time: 0.000086  Rows_sent: 0  Rows_examined: 0
+# Rows_affected: 0  Bytes_sent: 246
+SET timestamp=1543254893;
+SELECT * FROM `members` LIMIT 0,1000;
+# Time: 181126 17:54:59
+# User@Host: docker[docker] @  [192.168.0.1]
+# Thread_id: 10  Schema: grouper  QC_hit: No
+# Query_time: 0.000317  Lock_time: 0.000074  Rows_sent: 48  Rows_examined: 48
+# Rows_affected: 0  Bytes_sent: 2917
+SET timestamp=1543254899;
+SELECT * FROM `members` LIMIT 0,1000;
