@@ -39,6 +39,7 @@
                 <th>End Date</th>
                 <th>Status</th>
                 <th></th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -49,6 +50,7 @@
                     <td>{{ $event->start_date }}</td>
                     <td>{{ $event->end_date }}</td>
                     <td>{{ $event->status === 1 ? 'Active' : 'Inactive' }}</td>
+                    <td><a href="/events/{{ $event->id }}">View <span data-feather="edit-2"></span></a></td>
                     <td><a href="/events/{{ $event->id }}/edit">Edit <span data-feather="edit-2"></span></a></td>
                 </tr>
             @endforeach
