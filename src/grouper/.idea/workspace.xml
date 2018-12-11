@@ -2,9 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c17e74d4-d207-4672-b9e3-22b32e3b8965" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../../docker/database/data/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/aria_log.00000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker/database/data/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/aria_log_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker/database/data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/ib_buffer_pool" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/articles.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/articles.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/articles.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/articles.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/event_group.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/event_group.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/event_group.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/event_group.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/events.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/events.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/events.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/events.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/group_member.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/group_member.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/group_member.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/group_member.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/groups.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/groups.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/groups.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/groups.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/members.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/members.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/members.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/members.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/migrations.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/migrations.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_access_tokens.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_access_tokens.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_access_tokens.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_access_tokens.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_auth_codes.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_auth_codes.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_auth_codes.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_auth_codes.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_clients.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_clients.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_clients.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_clients.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_personal_access_clients.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_personal_access_clients.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_personal_access_clients.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_personal_access_clients.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_refresh_tokens.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_refresh_tokens.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_refresh_tokens.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/oauth_refresh_tokens.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/password_resets.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/password_resets.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/password_resets.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/password_resets.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/users.frm" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/users.frm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker/database/data/grouper/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/grouper/users.ibd" afterDir="false" />
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
       <change beforePath="$PROJECT_DIR$/../../docker/database/data/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker/database/data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker/database/data/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker/database/data/ibtmp1" beforeDir="false" />
@@ -13,6 +46,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/events/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events/index.blade.php" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/resources/views/groups/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/groups/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/groups/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/groups/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/groups/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/groups/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/members/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/members/index.blade.php" afterDir="false" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,12 +73,74 @@
     <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1173">
               <caret line="55" selection-start-line="55" selection-end-line="55" />
+=======
+    <leaf>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="225">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
+            <state relative-caret-position="-2160" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#40#54#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="MemberController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+              <folding>
+                <element signature="e#40#55#0#PHP" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="2018_09_28_222737_create_events_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_28_222737_create_events_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoreEventRequest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/StoreEventRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/events/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
             </state>
           </provider>
         </entry>
@@ -49,11 +154,57 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/events/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
               <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="edit.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/members/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="123" selection-start-line="5" selection-start-column="123" selection-end-line="5" selection-end-column="123" />
+=======
+      <file leaf-file-name="GroupController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GroupController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="93" selection-start-line="93" selection-end-line="106" selection-end-column="9" />
+              <folding>
+                <element signature="e#40#54#0#PHP" expanded="true" />
+              </folding>
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/groups/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/groups/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/members/create.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="21" column="75" lean-forward="true" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
             </state>
           </provider>
         </entry>
@@ -229,11 +380,20 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
     <option name="y" value="23" />
+<<<<<<< HEAD
     <option name="width" value="1551" />
+=======
+<<<<<<< HEAD
+    <option name="width" value="1478" />
+    <option name="height" value="980" />
+=======
+    <option name="width" value="1582" />
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
     <option name="height" value="965" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -300,6 +460,7 @@
       <option name="presentableId" value="Default" />
       <updated>1537425613998</updated>
       <workItem from="1537425615135" duration="2090000" />
+<<<<<<< HEAD
       <workItem from="1538079259357" duration="10350000" />
       <workItem from="1539577380879" duration="315000" />
       <workItem from="1539588688903" duration="276000" />
@@ -309,17 +470,63 @@
       <workItem from="1542993129087" duration="433000" />
       <workItem from="1543474943927" duration="881000" />
       <workItem from="1543910542691" duration="689000" />
+=======
+      <workItem from="1538079259357" duration="10680000" />
+      <workItem from="1539626358296" duration="677000" />
+      <workItem from="1540414231591" duration="259000" />
+      <workItem from="1541794237470" duration="421000" />
+      <workItem from="1542217817666" duration="58000" />
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="36338000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="14185000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="3360" y="23" width="1478" height="980" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27019498" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+=======
+    <option name="totallyTimeSpent" value="30906000" />
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="1551" height="965" extended-state="0" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25447315" />
+=======
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Regex Tester" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23246753" />
+      <window_info anchor="bottom" id="Reviews" order="6" />
+      <window_info anchor="bottom" id="Docker" order="8" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="0" weight="0.3298122" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -348,7 +555,139 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="103" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="123" selection-start-line="5" selection-start-column="123" selection-end-line="5" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="103" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="123" selection-start-line="5" selection-start-column="123" selection-end-line="5" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/header.blade.php">
+=======
     <entry file="file://$PROJECT_DIR$/app/Transformers/MemberTransformer.php">
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
@@ -371,8 +710,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/MembersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="180">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+=======
         <state relative-caret-position="210">
           <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
         </state>
       </provider>
     </entry>
@@ -399,8 +743,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/MemberFactory.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+=======
         <state relative-caret-position="322">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
         </state>
       </provider>
     </entry>
@@ -411,7 +760,17 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/database/seeds/ArticlesTableSeeder.php">
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
@@ -439,6 +798,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+=======
     <entry file="file://$PROJECT_DIR$/database/seeds/EventsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -454,6 +816,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_28_225051_create_event_group_pivot_table.php">
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
@@ -483,8 +846,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="75">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+=======
         <state relative-caret-position="253">
           <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
         </state>
       </provider>
     </entry>
@@ -497,8 +865,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="360">
+          <caret line="24" column="64" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
+=======
         <state relative-caret-position="663">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
         </state>
       </provider>
     </entry>
@@ -511,8 +884,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="390">
+          <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+=======
         <state relative-caret-position="230">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
         </state>
       </provider>
     </entry>
@@ -581,6 +959,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_27_184620_create_members_table.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="225">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/members/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="123" selection-start-line="5" selection-start-column="123" selection-end-line="5" selection-end-column="123" />
+=======
         <state relative-caret-position="210">
           <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
         </state>
@@ -604,6 +993,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="53" column="68" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="68" />
+<<<<<<< HEAD
+=======
+          <folding>
+            <element signature="e#40#81#0#PHP" expanded="true" />
+          </folding>
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
         </state>
       </provider>
     </entry>
@@ -614,7 +1010,20 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_09_28_222737_create_events_table.php">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GroupController.php">
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
@@ -672,8 +1081,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/events/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="506">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+=======
+        <state relative-caret-position="414">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+>>>>>>> f4c82522e604d6211afca62a2a508e7ae36443bd
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc
         </state>
       </provider>
     </entry>

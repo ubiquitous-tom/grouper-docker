@@ -2889,6 +2889,7 @@ select * from `events`;
 mysqld, Version: 10.3.9-MariaDB-1:10.3.9+maria~bionic-log (mariadb.org binary distribution). started with:
 Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
 Time		    Id Command	Argument
+<<<<<<< HEAD
 mysqld, Version: 10.3.9-MariaDB-1:10.3.9+maria~bionic-log (mariadb.org binary distribution). started with:
 Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
 Time		    Id Command	Argument
@@ -2901,3 +2902,5 @@ Time		    Id Command	Argument
 mysqld, Version: 10.3.9-MariaDB-1:10.3.9+maria~bionic-log (mariadb.org binary distribution). started with:
 Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
 Time		    Id Command	Argument
+=======
+>>>>>>> eebae9cb38fb556c5231f213be5ba221ac670dfc

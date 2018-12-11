@@ -30,18 +30,18 @@ services:
     volumes:
       - "${PROJECT_ROOT}:/var/www/html"
       # - ./docker/nginx/conf.d:/etc/nginx/conf.d
-      - ./docker/nginx/conf.d/grouper.dev.conf:/etc/nginx/conf.d/grouper.dev.conf
+      - ./docker/nginx/conf.d/grouper.test.conf:/etc/nginx/conf.d/grouper.test.conf
 
       # https://letsencrypt.org/docs/certificates-for-localhost/
       # https://www.humankode.com/ssl/create-a-selfsigned-certificate-for-nginx-in-5-minutes
       - ./docker/nginx/certs:/etc/ssl/certs
-      - ./docker/nginx/letsencrypt/live/grouper.dev:/etc/letsencrypt/live/grouper.dev
+      - ./docker/nginx/letsencrypt/live/grouper.test:/etc/letsencrypt/live/grouper.test
     networks:
       - server
     depends_on:
       - app
     environment:
-      - NGINX_HOST=grouper.dev
+      - NGINX_HOST=grouper.test
       - NGINX_PORT=80
     # command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && exec
     # command: sh -c "envsubst \"`env | awk -F = '{printf \" $$%s\", $$1}'`\" < /etc/nginx/conf.d/web.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
